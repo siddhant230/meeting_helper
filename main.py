@@ -73,7 +73,7 @@ class Clicker:
         curr_num_people = self.get_num_people()
         position = self.button_coords
         print(self.original_num_people, curr_num_people)
-        if curr_num_people <= self.original_num_people*0.5 or True:
+        if curr_num_people <= self.original_num_people*0.5:
             pt.click(position[0]+self.buffer, position[1]+self.buffer)
             print("clicked!!!!", position)
             return False
